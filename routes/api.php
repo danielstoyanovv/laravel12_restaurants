@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Route;
 Route::post('register', [AuthController::class, 'register']);
 Route::post('login', [AuthController::class, 'login']);
 
+
 // Protected routes (token required)
 Route::middleware('auth:sanctum')->group(function () {
     Route::apiResource('restaurants', RestaurantController::class);
