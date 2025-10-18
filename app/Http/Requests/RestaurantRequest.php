@@ -18,6 +18,7 @@ class RestaurantRequest extends FormRequest
             'name' => 'required|string|max:255',
             'capacity' => 'nullable|integer|min:0',
             'location' => 'nullable|string|max:255',
+            'magento_id' => 'nullable|integer|min:0',
         ];
     }
 }

@@ -12,6 +12,7 @@ return new class extends Migration {
             $table->string('name');
             $table->integer('capacity')->nullable();
             $table->string('location')->nullable();
+            $table->integer('magento_id')->nullable();
             $table->timestamps();
         });
     }

@@ -13,4 +13,5 @@ Route::post('login', [AuthController::class, 'login']);
 Route::middleware('auth:sanctum')->group(function () {
     Route::apiResource('restaurants', RestaurantController::class);
     Route::post('logout', [AuthController::class, 'logout']);
+    Route::delete('deleteRestaurant/{id}', [RestaurantController::class, 'deleteRestaurant']);
 });

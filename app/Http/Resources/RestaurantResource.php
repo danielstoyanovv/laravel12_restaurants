@@ -12,6 +12,7 @@ class RestaurantResource extends JsonResource
             'id' => $this->id,
             'name' => $this->name,
             'capacity' => (int) $this->capacity,
+            'magento_id' => (int) $this->magento_id,
             'location' => $this->location,
             'created_at' => $this->created_at?->toIso8601String(),
             'updated_at' => $this->updated_at?->toIso8601String(),

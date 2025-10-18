@@ -15,5 +15,6 @@ class Restaurant extends Model
         'name',
         'capacity',
         'location',
+        'magento_id'
     ];
 }

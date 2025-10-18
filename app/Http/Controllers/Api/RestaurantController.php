@@ -39,4 +39,11 @@ class RestaurantController extends Controller
         $restaurant->delete();
         return response()->json(null, 204);
     }
+    public function deleteRestaurant(int $id)
+    {
+        $restaurant = Restaurant::where('magento_id', $id)->first();
+        $restaurant->delete();
+        return response()->json(null, 204);
+    }
+
 }
